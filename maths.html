@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Maths Brevet 2026</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:10px;
+}
+
+.menu button{
+padding:10px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+cursor:pointer;
+}
+
+.section{
+display:none;
+padding:20px;
+margin:15px;
+background:#1e293b;
+border-radius:10px;
+}
+
+.card{
+background:#0b1220;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.ex{
+margin-top:10px;
+padding:10px;
+background:#111827;
+border-radius:8px;
+}
+</style>
+
+<script>
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+document.getElementById(id).style.display='block';
+}
+
+function check(input,ans){
+if(input.value.toLowerCase().includes(ans)){
+alert("✔️ Correct");
+}else{
+alert("❌ Faux");
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>➗ Maths - Brevet 2026 (COMPLET)</h1>
+</header>
+
+<div class="menu">
+<button onclick="show('nombres')">Nombres</button>
+<button onclick="show('gestion')">Gestion données</button>
+<button onclick="show('grandeurs')">Grandeurs</button>
+<button onclick="show('geometrie')">Géométrie</button>
+<button onclick="show('espace')">Espace</button>
+<button onclick="show('scratch')">Scratch</button>
+</div>
+
+<!-- ================= NOMBRES ================= -->
+<div class="section" id="nombres" style="display:block">
+
+<h2>➗ Nombres et calculs</h2>
+
+<div class="card">
+
+<h3>📌 Arithmétique</h3>
+<p>
+L’arithmétique travaille sur les nombres entiers et leurs propriétés. On étudie les multiples, diviseurs et nombres premiers. Elle sert à simplifier les calculs et à résoudre des problèmes de divisibilité. On utilise aussi la décomposition en facteurs premiers pour trouver le PGCD et le PPCM, utiles pour simplifier des fractions ou résoudre des problèmes complexes.
+</p>
+
+<div class="ex">
+Ex : 18 est-il divisible par 3 ?<br>
+<input id="a1"><button onclick="check(a1,'oui')">OK</button>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Nombres relatifs</h3>
+<p>
+Les nombres relatifs sont positifs ou négatifs. On peut les additionner, soustraire, multiplier et diviser en respectant les règles de signes. Ils servent à représenter des températures, dettes ou altitudes. Leur repérage sur une droite graduée aide à comprendre les distances entre les valeurs.
+</p>
+
+<div class="ex">
+Ex : (-3) + 5 = ?<br>
+<input id="a2"><button onclick="check(a2,'2')">OK</button>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Fractions</h3>
+<p>
+Une fraction représente une partie d’un tout. Pour additionner ou soustraire, il faut souvent un même dénominateur. Multiplier deux fractions revient à multiplier numérateurs et dénominateurs. Diviser revient à multiplier par l’inverse. Simplifier une fraction consiste à la réduire au maximum.
+</p>
+
+<div class="ex">
+Ex : 1/2 + 1/2 = ?<br>
+<input id="a3"><button onclick="check(a3,'1')">OK</button>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Racines carrées</h3>
+<p>
+La racine carrée d’un nombre est celui qui multiplié par lui-même donne ce nombre. Elle est utilisée pour résoudre des problèmes de géométrie comme Pythagore. On peut simplifier certaines racines en factorisant.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Puissances</h3>
+<p>
+Une puissance est une multiplication répétée. aⁿ signifie a multiplié par lui-même n fois. Les règles des puissances permettent de simplifier les calculs (addition des exposants, etc.).
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Calcul littéral</h3>
+<p>
+Le calcul littéral utilise des lettres pour représenter des nombres inconnus. On développe, factorise et simplifie des expressions. C’est utile pour résoudre des équations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Équations</h3>
+<p>
+Une équation est une égalité avec une inconnue. On cherche la valeur qui rend l’égalité vraie en isolant l’inconnue étape par étape.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= GESTION ================= -->
+<div class="section" id="gestion">
+
+<h2>📊 Organisation et données</h2>
+
+<div class="card">
+
+<h3>📌 Proportionnalité</h3>
+<p>
+Deux grandeurs sont proportionnelles si elles évoluent de la même manière. On utilise un coefficient de proportionnalité ou des tableaux. Cela sert pour les pourcentages, vitesses et échelles.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Fonctions</h3>
+<p>
+Une fonction associe un nombre à un autre. Elle permet de modéliser des situations et de faire des prédictions.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Statistiques</h3>
+<p>
+Les statistiques analysent des données avec moyenne, médiane et étendue. Elles permettent de comprendre des résultats.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Probabilités</h3>
+<p>
+Les probabilités mesurent les chances qu’un événement se produise. Elles sont comprises entre 0 et 1.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= GRANDEURS ================= -->
+<div class="section" id="grandeurs">
+
+<h2>📏 Grandeurs et mesures</h2>
+
+<div class="card">
+
+<h3>📌 Transformations</h3>
+<p>
+Les transformations géométriques incluent symétrie, rotation et translation. Elles conservent les formes mais déplacent les figures.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= GEOMETRIE ================= -->
+<div class="section" id="geometrie">
+
+<h2>📐 Géométrie</h2>
+
+<div class="card">
+
+<h3>📌 Pythagore</h3>
+<p>
+Dans un triangle rectangle, a² + b² = c². Permet de calculer des longueurs.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Thalès</h3>
+<p>
+Permet de calculer des longueurs avec des droites parallèles et triangles proportionnels.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Trigonométrie</h3>
+<p>
+Sin, cos, tan permettent de calculer des angles et longueurs dans les triangles rectangles.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= ESPACE ================= -->
+<div class="section" id="espace">
+
+<h2>📦 Espace</h2>
+
+<div class="card">
+
+<h3>📌 Géométrie dans l’espace</h3>
+<p>
+On étudie les solides comme cubes, pyramides et cylindres. On calcule leurs volumes et représentations.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= SCRATCH ================= -->
+<div class="section" id="scratch">
+
+<h2>💻 Scratch</h2>
+
+<div class="card">
+
+<h3>📌 Algorithmique</h3>
+<p>
+Scratch permet de créer des programmes avec des blocs. On apprend la logique, les conditions et les boucles.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
