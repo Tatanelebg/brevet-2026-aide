@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>SVT Brevet 2026</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:10px;
+}
+
+.menu button{
+padding:10px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+cursor:pointer;
+}
+
+.section{
+display:none;
+padding:20px;
+margin:15px;
+background:#1e293b;
+border-radius:10px;
+}
+
+.card{
+background:#0b1220;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+</style>
+
+<script>
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+document.getElementById(id).style.display='block';
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>🌿 SVT - Brevet 2026</h1>
+</header>
+
+<div class="menu">
+<button onclick="show('terre')">Terre</button>
+<button onclick="show('vivant')">Le vivant</button>
+<button onclick="show('corps')">Corps humain</button>
+</div>
+
+<!-- ================= TERRE ================= -->
+<div class="section" id="terre" style="display:block">
+
+<h2>🌍 La planète Terre, environnement et action humaine</h2>
+
+<div class="card">
+
+<h3>Fiche 1 : Dynamique de la Terre et risques</h3>
+<p>
+La Terre est une planète active avec des mouvements internes (tectonique des plaques) et externes. Ces mouvements provoquent des risques naturels comme les séismes, volcans et tsunamis. Les plaques tectoniques se déplacent lentement et peuvent se heurter ou s’écarter, créant des zones dangereuses. Les humains vivent souvent près de ces zones, ce qui augmente les risques. Il est donc important de prévoir et prévenir ces catastrophes grâce à la surveillance scientifique et aux systèmes d’alerte.
+</p>
+
+<h3>Fiche 2 : Météorologie et climatologie</h3>
+<p>
+La météorologie étudie le temps à court terme (pluie, vent, température). La climatologie analyse le climat sur de longues périodes. Le climat est influencé par les océans, l’atmosphère et les activités humaines. Le réchauffement climatique est causé par les gaz à effet de serre comme le CO₂. Cela entraîne la fonte des glaciers et la montée des eaux.
+</p>
+
+<h3>Fiche 3 : Ressources naturelles</h3>
+<p>
+Les ressources naturelles (eau, pétrole, minerais) sont indispensables à la vie humaine. Elles sont limitées et leur exploitation excessive provoque des problèmes environnementaux. Il est important de les gérer durablement pour préserver la planète.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= VIVANT ================= -->
+<div class="section" id="vivant">
+
+<h2>🧬 Le vivant et son évolution</h2>
+
+<div class="card">
+
+<h3>Fiche 1 : Nutrition des plantes</h3>
+<p>
+Les plantes produisent leur propre matière grâce à la photosynthèse. Elles utilisent la lumière, l’eau et le CO₂ pour fabriquer du glucose et de l’oxygène. Les feuilles jouent un rôle essentiel grâce à la chlorophylle. Les racines absorbent l’eau et les sels minéraux.
+</p>
+
+<h3>Fiche 2 : Nutrition des animaux</h3>
+<p>
+Les animaux doivent se nourrir d’autres êtres vivants. Ils digèrent les aliments pour obtenir de l’énergie. Les nutriments passent dans le sang et sont utilisés par les cellules.
+</p>
+
+<h3>Fiche 3 : Évolution</h3>
+<p>
+Les espèces évoluent au fil du temps. Certaines disparaissent, d’autres apparaissent. La sélection naturelle favorise les individus les mieux adaptés à leur environnement.
+</p>
+
+<h3>Fiche 4 : Biodiversité</h3>
+<p>
+La biodiversité représente la diversité des espèces vivantes, des milieux et des gènes. Elle est essentielle pour l’équilibre de la planète.
+</p>
+
+<h3>Fiche 5 : Stabilité et diversité</h3>
+<p>
+Les espèces peuvent changer mais restent proches de leur origine. Les mutations génétiques expliquent les différences entre individus.
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= CORPS HUMAIN ================= -->
+<div class="section" id="corps">
+
+<h2>🧍 Le corps humain et la santé</h2>
+
+<div class="card">
+
+<h3>Fiche 1 : Effort physique</h3>
+<p>
+Lors d’un effort, le corps consomme plus d’oxygène et d’énergie. Le cœur et les muscles travaillent plus rapidement pour répondre aux besoins.
+</p>
+
+<h3>Fiche 2 : Défenses de l’organisme</h3>
+<p>
+Le corps possède un système immunitaire qui protège contre les microbes. Il existe des défenses naturelles et spécifiques comme les anticorps.
+</p>
+
+<h3>Fiche 3 : Système nerveux</h3>
+<p>
+Le système nerveux permet de recevoir et transmettre des informations grâce au cerveau et aux nerfs. Il contrôle les mouvements et les sensations.
+</p>
+
+<h3>Fiche 4 : Alimentation</h3>
+<p>
+Une alimentation équilibrée est nécessaire pour rester en bonne santé. Elle doit contenir glucides, protéines, lipides, vitamines et eau.
+</p>
+
+<h3>Fiche 5 : Reproduction humaine</h3>
+<p>
+La reproduction humaine permet la naissance d’un nouvel individu. Elle implique les organes reproducteurs et la fécondation.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
