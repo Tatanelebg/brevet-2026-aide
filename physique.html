@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Physique-Chimie Brevet 2026</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:20px;
+background:#111827;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+padding:10px;
+}
+
+.menu button{
+padding:10px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+cursor:pointer;
+}
+
+.section{
+display:none;
+padding:20px;
+margin:15px;
+background:#1e293b;
+border-radius:10px;
+}
+
+.card{
+background:#0b1220;
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+}
+</style>
+
+<script>
+function show(id){
+document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+document.getElementById(id).style.display='block';
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>⚡ Physique-Chimie - Brevet 2026</h1>
+</header>
+
+<div class="menu">
+<button onclick="show('matiere')">Matière</button>
+<button onclick="show('mouvement')">Mouvement</button>
+<button onclick="show('energie')">Énergie</button>
+<button onclick="show('signaux')">Signaux</button>
+</div>
+
+<!-- ================= MATIERE ================= -->
+<div class="section" id="matiere" style="display:block">
+
+<h2>🧪 Organisation et transformations de la matière</h2>
+
+<div class="card">
+
+<h3>États de la matière</h3>
+<p>
+Solide, liquide, gaz.  
+Les changements d’état ne créent pas de matière.
+</p>
+
+<p><b>Exemple :</b> glace → eau = fusion</p>
+
+</div>
+
+<div class="card">
+
+<h3>Description moléculaire</h3>
+<p>
+Solide = molécules serrées  
+Liquide = proches mobiles  
+Gaz = très espacées
+</p>
+
+<p><b>Exemple :</b> air = gaz très dispersé</p>
+
+</div>
+
+<div class="card">
+
+<h3>Transformations chimiques</h3>
+<p>
+Réactifs → Produits
+</p>
+
+<p><b>Exemple :</b> carbone + O₂ → CO₂</p>
+
+<p>⚠️ La masse se conserve</p>
+</div>
+
+<div class="card">
+
+<h3>Acide / Base</h3>
+<p>
+pH < 7 = acide  
+pH = 7 neutre  
+pH > 7 base
+</p>
+
+<p><b>Exemple :</b> citron = acide</p>
+
+<p>Neutralisation : acide + base → sel + eau</p>
+</div>
+
+<div class="card">
+
+<h3>Matière dans l’Univers</h3>
+<p>
+Étoiles → fabrication des éléments chimiques
+</p>
+
+<p><b>Exemple :</b> fer créé dans les étoiles</p>
+
+</div>
+
+</div>
+
+<!-- ================= MOUVEMENT ================= -->
+<div class="section" id="mouvement">
+
+<h2>🚀 Mouvements et forces</h2>
+
+<div class="card">
+
+<h3>Vitesse</h3>
+
+<p><b>Formule :</b> v = d / t</p>
+
+<p>
+v = vitesse  
+d = distance  
+t = temps
+</p>
+
+<p><b>Exemple :</b> 100 km / 2 h = 50 km/h</p>
+
+</div>
+
+<div class="card">
+
+<h3>Forces</h3>
+
+<p>Une force change le mouvement ou la forme.</p>
+
+<p><b>Formule poids :</b> P = m × g</p>
+
+<p>
+g ≈ 9,8 N/kg
+</p>
+
+<p><b>Exemple :</b> 50 kg → 490 N</p>
+
+</div>
+
+</div>
+
+<!-- ================= ENERGIE ================= -->
+<div class="section" id="energie">
+
+<h2>⚡ Énergie et circuits</h2>
+
+<div class="card">
+
+<h3>Formes d’énergie</h3>
+<p>
+Mécanique, thermique, électrique, chimique, lumineuse
+</p>
+
+<p><b>Exemple :</b> pile → lampe</p>
+
+</div>
+
+<div class="card">
+
+<h3>Circuits électriques</h3>
+
+<p><b>Formule :</b> I = U / R</p>
+
+<p>
+I = intensité (A)  
+U = tension (V)  
+R = résistance (Ω)
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Puissance et énergie</h3>
+
+<p><b>Formules :</b></p>
+<p>P = E / t</p>
+<p>E = P × t</p>
+
+<p><b>Exemple :</b> 100 W × 10 s = 1000 J</p>
+
+</div>
+
+<div class="card">
+
+<h3>Loi d’Ohm</h3>
+
+<p><b>Formule :</b> U = R × I</p>
+
+<p><b>Exemple :</b> 10 Ω × 2 A = 20 V</p>
+
+</div>
+
+</div>
+
+<!-- ================= SIGNAUX ================= -->
+<div class="section" id="signaux">
+
+<h2>📡 Signaux</h2>
+
+<div class="card">
+
+<h3>Lumière</h3>
+<p>
+Propagation rectiligne
+</p>
+
+<p><b>Vitesse :</b> 300 000 km/s</p>
+
+</div>
+
+<div class="card">
+
+<h3>Son</h3>
+<p>
+Vibration qui se propage dans l’air
+</p>
+
+<p><b>Vitesse :</b> 340 m/s</p>
+
+<p>❌ pas dans le vide</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
